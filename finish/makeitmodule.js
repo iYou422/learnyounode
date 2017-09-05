@@ -2,7 +2,12 @@ var filter = require('./mymodule.js');
 var folder = process.argv[2];
 var ext = process.argv[3];
 
-filter(folder, ext, function(err, files){});
+filter(folder, ext, function(err, files) {
+  if (err) return console.error(err);
+  files.forEach(function(file) {
+    console.log(file);
+  })
+});
 
 /*******************************************************
 var filterFn = require('./mymodule.js')

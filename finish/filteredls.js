@@ -1,14 +1,14 @@
 var fs = require('fs');
 var path = require('path');
-var pathName = process.argv[2];
-var extName = "." + process.argv[3];
+var folder = process.argv[2];
+var ext = "." + process.argv[3];
 
-fs.readdir(pathName, function(err, list) {  
-  if (err) throw err;
-  
-  for (var i = 0; i < list.length; i++) {
-    if (path.extname(list[i]) === extName) {
-      console.log(list[i]);
+fs.readdir(folder, function(err, files) {
+  if (err) return console.log(err);
+
+  for (var i = 0; i < files.length; i++) {
+    if (path.extname(files[i]) === ext) {
+      console.log(files[i]);
     }
   }
 });
