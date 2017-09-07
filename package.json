@@ -1,0 +1,26 @@
+{
+  "name": "learnyounode",
+  "version": "1.0.0",
+  "description": "learnyounode excerise",
+  "main": "babysteps.js",
+  "dependencies": {
+    "bl": "^1.2.1",
+    "through2-map": "^3.0.0",
+    "strftime": "^0.10.0",
+    "async": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iYou422/learnyounode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iYou422/learnyounode/issues"
+  },
+  "homepage": "https://github.com/iYou422/learnyounode#readme"
+}
